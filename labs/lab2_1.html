@@ -412,5 +412,614 @@
 
 <section id="ЗАВДАННЯ №3 FLEXBOX">
   <h2><b>Завдання №3</b> FLEXBOX</h2>
-  <img src="images/1/jpg" alt="1">
+ <p>Кожному студенту виконати свій номер варіанта Завдання №3,  за технологією FLEXBOX та засобами CSS.
+Номер варіанта відповідає останній цифрі студента у списку групи. </p>
+</section>
+
+<section id="Скріншот сторінки FLEXBOX " data-indent="2">
+  <h2><b>Скріншот сторінки</b> FLEXBOX</h2>
+ <img src="images/1.jpg" alt="1">
+  <img src="images/2.jpg" alt="2">
+</section>
+
+<section id="HTML.код FLEXBOX " data-indent="2">
+  <h2><b>HTML.код</b> FLEXBOX</h2>
+ <pre style="background:lch(100% 0.01 296.81);color:#000000;padding:20px;border-radius:10px;overflow-x:auto;font-family:'Courier New',monospace;line-height:1.5;">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="uk"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;HTML &amp; CSS Курс&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="container"&gt;
+        &lt;!-- Ліва частина --&gt;
+        &lt;div class="left"&gt;
+            &lt;img src="html5-css3-2.jpg" alt="HTML CSS" class="course-image"&gt;
+
+            &lt;!-- Біле віконце з червоною стрілкою --&gt;
+            &lt;div class="discount-box"&gt;
+                &lt;div class="arrow"&gt;Акція!&lt;/div&gt;
+                &lt;div class="discount-info"&gt;
+                    &lt;span class="big"&gt;67&lt;/span&gt; % &lt;br&gt;
+                    мінус &lt;br&gt;
+                    Економія &lt;b&gt;800 грн&lt;/b&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- Права частина --&gt;
+        &lt;div class="right"&gt;
+            &lt;h1&gt;HTML і CSS Професійний курс&lt;br&gt;частина 1&lt;/h1&gt;
+
+            &lt;div class="price-section"&gt;
+                &lt;span class="old-price"&gt;1,190 грн&lt;/span&gt;
+                &lt;span class="new-price"&gt;390 грн&lt;/span&gt;
+            &lt;/div&gt;
+            &lt;p class="save-info green-text"&gt;💰🐷 Ви економите 800 грн 67%&lt;/p&gt;
+            &lt;p class="save-info yellow-text"&gt;⏱️ Покваптеся! Закінчується через 1 день 12 годин 03 хвилини 38 сек&lt;/p&gt;
+
+            &lt;p class="description"&gt;
+                Відео запис курсу HTML і CSS. На цьому курсі ви навчитеся робити справжні проєкти, такі ж за рівнем складності, як в індустрії. І будете робити їх правильно, щоб після навчання видавати результат високого рівня, за який компанії готові платити.
+            &lt;/p&gt;
+
+            &lt;button class="buy-btn"&gt;Купити →&lt;/button&gt;
+
+            &lt;!-- Блок із іконками --&gt;
+            &lt;div class="icons-section"&gt;
+                &lt;div class="icons-left"&gt;
+                    &lt;img src="photo_2025-11-07_04-03-10.jpg" alt="Іконки" class="icons-img"&gt;
+                &lt;/div&gt;
+
+                &lt;div class="icons-right"&gt;
+                    &lt;p class="icon-text1"&gt;безпечні платежі&lt;/p&gt;
+                    &lt;p class="icon-text2"&gt;захист персональних даних&lt;/p&gt;
+                    &lt;p class="icon-text3"&gt;100% унікальні матеріали&lt;/p&gt;
+                    &lt;p class="icon-text4"&gt;гарантія кращої ціни&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Секція Похожие товари --&gt;
+    &lt;div class="similar-products"&gt;
+      &lt;h2&gt;Похожие товары&lt;/h2&gt;
+
+      &lt;div class="products-grid"&gt;
+        &lt;div class="product-card"&gt;
+          &lt;div class="product-img"&gt;
+            &lt;img src="photo_2025-11-07_16-53-32.jpg" alt="Linux курс"&gt;
+            &lt;div class="promo-box"&gt;
+              &lt;div class="promo-arrow"&gt;Акція!&lt;/div&gt;
+              &lt;div class="promo-info"&gt;
+                &lt;span class="promo-big"&gt;67&lt;/span&gt;% &lt;br&gt;
+                Мінус &lt;br&gt;
+                Економія 800 грн
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+          &lt;p class="product-title"&gt;Linux з нуля – відеокурс&lt;/p&gt;
+          &lt;p class="product-prices"&gt;&lt;span class="old"&gt;1,190 грн&lt;/span&gt; &lt;span class="new"&gt;390 грн&lt;/span&gt;&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Нижній блок --&gt;
+    &lt;div class="footer-section"&gt;
+      &lt;div class="footer-container"&gt;
+        ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</section>
+
+<section id="CSS. код FLEXBOX " data-indent="2">
+  <h2><b>CSS. код</b> FLEXBOX</h2>
+<pre style="background:lch(100% 0.01 296.81);color:#000000;padding:20px;border-radius:10px;overflow-x:auto;font-family:'Courier New',monospace;line-height:1.5;">
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Ліва частина */
+.left {
+  position: relative;
+  flex: 0 0 500px;
+}
+
+.course-image {
+  width: 100%;
+  display: block;
+}
+
+/* Акція */
+.discount-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  width: 90px;
+}
+
+.arrow {
+  position: absolute;
+  top: -18px;
+  left: 0;
+  background: #ff3b30;
+  color: white;
+  padding: 3px 12px;
+  font-size: 13px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.discount-info .big {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Права частина */
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.price-section {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.old-price {
+  color: #007bff;
+  text-decoration: line-through;
+  font-size: 18px;
+}
+
+.new-price {
+  color: #e60000;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Тексти економії */
+.green-text {
+  color: #1f7a3a;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+.yellow-text {
+  color: #f5c518;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Опис */
+.description {
+  margin-top: 20px;
+  line-height: 1.6;
+  font-size: 15px;
+  color: #555;
+  font-weight: normal;
+  max-width: 450px;
+}
+
+/* Кнопка */
+.buy-btn {
+  background: #ff3b30;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  padding: 12px 0;
+  width: 450px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 0;
+  transition: background 0.2s;
+}
+
+.buy-btn:hover {
+  background: #e32e25;
+}
+
+/* Іконки + текст справа */
+.icons-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 10px;
+  width: 100%;
+  margin-left: -150px;
+}
+
+.icons-left {
+  position: relative;
+}
+
+.icons-img {
+  width: 45px;
+  height: auto;
+  display: block;
+}
+
+/* Колонка з текстом */
+.icons-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 17px;
+  color: #003632;
+}
+
+/* Похожие товары */
+.similar-products {
+  max-width: 1200px;
+  margin: 60px auto;
+}
+
+.similar-products h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+.products-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Картка товару */
+.product-card {
+  width: 260px;
+  font-family: Arial, sans-serif;
+}
+
+.product-img {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+}
+
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Акція */
+.promo-box {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #fff;
+  width: 90px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  font-size: 13px;
+}
+
+.promo-arrow {
+  position: absolute;
+  top: -18px;
+  left: 0;
+  background: #ff3b30;
+  color: white;
+  padding: 3px 12px;
+  font-size: 13px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+}
+
+.promo-info .promo-big {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Текст під фото */
+.product-title {
+  font-size: 15px;
+  margin-top: 10px;
+  color: #000;
+}
+
+/* Ціни */
+.product-prices {
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.product-prices .old {
+  text-decoration: line-through;
+  color: #444;
+  margin-right: 10px;
+}
+
+.product-prices .new {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Кнопка "Купити" під останньою карткою */
+.buy-btn-small {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+}
+
+.buy-btn-small:hover {
+  text-decoration: underline;
+}
+
+/* === Нижній блок (футер) === */
+.footer-section {
+  margin-top: 60px;
+  padding: 30px 0;
+  border-top: 1px solid #ddd;
+  font-family: Arial, sans-serif;
+  color: #555;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 6px;
+  color: #777;
+}
+
+.footer-mail {
+  width: 40px;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+}
+
+.footer-partners {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+}
+
+.footer-payments {
+  width: 220px;
+  height: auto;
+  display: block;
+  margin-top: 10px;
+}
+
+.footer-col p {
+  font-size: 14px;
+  color: #777;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
+/* Адаптив */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-col {
+    width: 100%;
+  }
+
+  .footer-partners,
+  .footer-payments {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+</pre>
+</section>
+
+<section id="concl">
+  <h2>Висновки</h2>
+  <p>У виконанні цієї лабораторної роботи я придбав практичні навички роботи  верстки сторінок засобами CSS, верстки на основі плаваючих елементів, з’ясував переваги та недоліки типів макетів веб-сторінок. А також придбав практичні навички роботи  верстки сторінок засобами CSS та FLEXBOX   </p>
+</section>
+
+<section id="Контрольні запитання" data-indent="2">
+  <h2><b>Контрольні</b>запитання</h2>
+<p> 1. На яких трьох базових концепціях засновані всі методики верстки сторінок засобами CSS
+
+Верстка сторінок у CSS базується на трьох основних концепціях:
+
+Потік документа (normal flow) — елементи розміщуються один за одним згідно з їхнім порядком у HTML.
+
+Позиціонування (positioning) — можливість точно розташовувати елементи за допомогою властивостей position: relative, absolute, fixed, sticky.
+
+Плаваючі елементи (floats) — дозволяють обтікання текстом і створення колонок через float та clear.
+</p>
+
+<p>2. Фіксований тип макетів
+
+Визначення: ширина всіх елементів задається у пікселях (px), і вона не змінюється при зміні розміру вікна.
+Переваги:
+
+Простий у реалізації.
+
+Дизайн завжди виглядає однаково.
+Недоліки:
+
+Не адаптується під різні екрани.
+
+Погано виглядає на мобільних пристроях або дуже великих моніторах.
+</p>
+
+
+<p>3. Гумовий тип макетів
+
+Визначення: ширина елементів задається у відсотках (%), і сторінка розтягується або стискається під ширину вікна.
+Переваги:
+
+Підлаштовується під будь-яку ширину екрана.
+
+Менше порожнього місця збоку.
+Недоліки:
+
+Може спотворюватись дизайн.
+
+Текст або зображення можуть ставати занадто великими або малими.
+</p>
+
+<p>4. Еластичний тип макетів
+
+Визначення: ширина елементів задається у відносних одиницях (em або rem), тобто залежить від розміру шрифту.
+Переваги:
+
+Масштабується разом зі шрифтом користувача.
+
+Добре підходить для доступності (Accessibility).
+Недоліки:
+
+Складніше контролювати зовнішній вигляд при зміні шрифту.
+
+Може "розповзатися" при великих розмірах тексту.
+</p>
+
+<p>5. Адаптивний тип макетів
+
+Визначення: сторінка змінює розташування елементів під різні розміри екранів за допомогою медіа-запитів (media queries).
+Переваги:
+
+Підходить для всіх пристроїв (ПК, планшети, телефони).
+
+Контрольований дизайн на кожній роздільності.
+Недоліки:
+
+Потрібно писати багато додаткового CSS.
+
+Більше часу на розробку та тестування.
+</p>
+
+<p>6. Комбінований тип макетів
+
+Визначення: поєднання кількох підходів (наприклад, фіксований + гумовий або адаптивний + еластичний).
+Переваги:
+
+Гнучкість у створенні сучасного дизайну.
+
+Можна поєднати точність фіксованого та адаптивність гумового.
+Недоліки:
+
+Складність реалізації.
+
+Може потребувати додаткових медіа-запитів і перевірок.
+</p>
+
+<p>7. Створення сторінки з розміткою за допомогою таблиці
+
+Використовується тег <table> у HTML.
+Приклад:
+<pre><code>
+&lt;table border="1" width="100%"&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Шапка&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Основний контент&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Футер&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
+
+У CSS можна задати кольори, відступи, шрифти для кожної клітинки.
+
+Але таблиці зараз не рекомендують для верстки макета — лише для табличних даних.
+</p>
+
+<p>8. Створення сторінки з розміткою за допомогою плаваючих блоків
+
+Використовується властивість float.
+Приклад:
+
+<pre><code>
+&lt;div class="left"&gt;Меню&lt;/div&gt;
+&lt;div class="right"&gt;Контент&lt;/div&gt;
+</code></pre>
+
+
+<pre><code>
+.left {
+  float: left;
+  width: 30%;
+  background: lightgray;
+}
+.right {
+  float: right;
+  width: 70%;
+  background: white;
+}
+</code></pre>
+Так елементи вирівнюються один біля одного, створюючи колонки.
+</p>
 </section>

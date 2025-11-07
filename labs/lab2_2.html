@@ -1,9 +1,193 @@
-<div data-section="Опис">
-  <h3>Опис</h3>
-  <p>Тут буде опис лабораторної роботи.</p>
-</div>
 
-<div data-section="Висновки">
-  <h3>Висновки</h3>
-  <p>Тут будуть висновки.</p>
-</div>
+<section id="topic">
+  <h2>Тема та мета роботи</h2>
+  <p><b>Тема:</b> АДАПТИВНА ВЕРСТКА. МЕДІА-ЗАПИТИ. МЕТАТЕГ VIEWPORT.</p>
+  <p><b>Мета:</b> Адаптивна верстка. Медіа-запити. Медіа-типи. Медіа-функції.Метатег viewport. Інструменти розробника. Стратегія Mobile First. </p>
+  <p><b>Місце розташування:</b> <a href="https://github.com/vladyslavtarasenko-cmd/-ipz23_301-appINDEPENDENT--Tarasenko-Vladyslav--MEU-2025" target="_blank">GitHub</a></p>
+</section>
+
+<section id="Медіа запити та СSS">
+  <h2><b>2.	Використовуючі медіа-запити та СSS- правила, для вибраних вами брейкпоінтів, виконати адаптивну верстку для :</b></h2>
+ <p><pre> /* Десктоп */
+@media (min-width: 1025px) { ... }
+
+/* Планшет */
+@media (max-width: 1024px) and (min-width: 768px) { ... }
+
+/* Мобільний */
+@media (max-width: 767px) { ... }
+</pre></p>
+</section>
+
+<section id="Десктопної версії" data-indent="2">
+  <h2><b></b></h2>
+ <p><pre> /* 🖥️ Десктопна версія */
+@media (min-width: 1025px) {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .left {
+    width: 40%;
+  }
+
+  .right {
+    width: 60%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
+
+</pre></p>
+</section>
+
+<section id="Планшетної версії" data-indent="2">
+  <h2><b></b></h2>
+ <p><pre> /* 💻 Планшетна версія */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .container {
+    flex-direction: column; /* блоки йдуть зверху вниз */
+    align-items: center;
+    gap: 30px;
+  }
+
+  .left, .right {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .buy-btn {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .icons-section {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .similar-products {
+    padding: 0 20px;
+  }
+
+  .products-grid {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .product-card {
+    width: 45%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-col {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+</pre></p>
+</section>
+
+<section id="Мобільної версії" data-indent="2">
+  <h2><b></b></h2>
+ <p><pre> /* 📱 Мобільна версія */
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .course-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .price-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .buy-btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px 0;
+  }
+
+  .icons-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-left: 0;
+  }
+
+  .similar-products {
+    padding: 0 10px;
+  }
+
+  .products-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-col {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .footer-col h4 {
+    font-size: 16px;
+  }
+
+  .footer-col p,
+  .footer-col ul li {
+    font-size: 13px;
+  }
+}
+</pre></p>
+</section>
+ 
+<section id="concl">
+  <h2>Висновки</h2>
+  <p>Я Зрозумів і запам'ятав що таке Адаптивна верстка. Медіа-запити. Медіа-типи. Медіа-функції.Метатег viewport. Інструменти розробника. Стратегія Mobile First.    </p>
+</section>
+
+
