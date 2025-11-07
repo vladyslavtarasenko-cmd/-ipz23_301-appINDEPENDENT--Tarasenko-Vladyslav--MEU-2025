@@ -1,0 +1,416 @@
+<section id="topic">
+  <h2>Тема, мета та місце розташування</h2>
+  <p><b>Тема:</b> Структура HTML-документа</p>
+  <p><b>Мета:</b> Ознайомитись із базовою структурою HTML-документа, навчитися створювати елементи сторінки, таблиці, форми та вставляти зображення.</p>
+  <p><b>Місце розташування:</b> <a href="https://github.com/vladyslavtarasenko-cmd/-ipz23_301-appINDEPENDENT--Tarasenko-Vladyslav--MEU-2025" target="_blank">GitHub</a></p>
+</section>
+
+
+<section id="ЗАВДАННЯ №1 Зовнішній вигляд макету. Код макету.">
+  <h2><b>Завдання №1</b> Зовнішній вигляд макету. Код макету.</h2>
+  <p><pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="uk"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;CyberZone — Комп'ютерний клуб&lt;/title&gt;
+  &lt;!-- Підключення CSS стилів --&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;!-- Header (шапка сайту з логотипом та навігацією) --&gt;
+&lt;header&gt;
+  &lt;div class="logo"&gt;
+    &lt;a href="index.html"&gt;CyberZone&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href="#home"&gt;Головна&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#about"&gt;Про нас&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#services"&gt;Послуги&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#gallery"&gt;Галерея&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="#contact"&gt;Контакти&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;section id="home" class="hero"&gt;
+  &lt;div class="hero-content"&gt;
+    &lt;h1&gt;Ласкаво просимо до &lt;span&gt;CyberZone&lt;/span&gt;&lt;/h1&gt;
+    &lt;p&gt;Твоя зона комфорту, ігор та перемог.&lt;/p&gt;
+    &lt;a href="#" class="btn" id="bookBtn"&gt;Забронювати місце&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section id="about" class="about"&gt;
+  &lt;h2&gt;Про нас&lt;/h2&gt;
+  &lt;p&gt;&lt;strong&gt;CyberZone&lt;/strong&gt; — це більше, ніж просто комп’ютерний клуб.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section id="services" class="services"&gt;
+  &lt;h2&gt;Наші послуги&lt;/h2&gt;
+  &lt;div class="service-list"&gt;
+    &lt;div class="service"&gt;
+      &lt;h3&gt;Ігрові місця&lt;/h3&gt;
+      &lt;p&gt;RTX 4070 / i7 / 240Hz монітори.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="service"&gt;
+      &lt;h3&gt;Турніри&lt;/h3&gt;
+      &lt;p&gt;CS2, Valorant, Dota 2 тощо.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="service"&gt;
+      &lt;h3&gt;VR-зона&lt;/h3&gt;
+      &lt;p&gt;Поринь у віртуальну реальність.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+
+&lt;section id="gallery" class="gallery"&gt;
+  &lt;h2&gt;Галерея&lt;/h2&gt;
+  &lt;p&gt;Поглянь на наш клуб!&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section id="contact" class="contact"&gt;
+  &lt;h2&gt;Контакти&lt;/h2&gt;
+  &lt;p&gt;📍 м. Київ, вул. Геймерська 7&lt;/p&gt;
+  &lt;p&gt;📞 +380 (99) 123-45-67&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;footer&gt;
+  &lt;p&gt;© 2025 CyberZone. Усі права захищено.&lt;/p&gt;
+&lt;/footer&gt;
+
+&lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</p>
+</section>
+
+<section id="ЗАВДАННЯ №2">
+  <h2><b>Завдання №2</b></h2>
+  <p>Засобами <b>HTML</b> та <b>CSS</b> виконати <b>Завдання №2</b>, а саме створити окремі веб-сторінки:</p>
+
+    <p><h2>1. Розмітка за допомогою таблиці</h2>
+    <ul>
+      <li>Фіксована таблична верстка</li>
+      <li>Гумова таблична верстка</li>
+    </ul>
+    <p class="note">(Номер варіанта – остання цифра у списку групи)</p>
+
+    <h2>2. Розмітка за допомогою блоків (плаваючих елементів)</h2>
+    <ul>
+      <li>Фіксована блокова верстка</li>
+      <li>Гумова блокова верстка</li>
+    </ul>
+    <p class="note">(Номер варіанта – остання цифра у списку групи + 1)</p>
+  </div></p>
+</section>
+
+<section id="Фіксована таблична верстка" data-indent="2">
+  <h2><b>Фіксована таблична верстка</b></h2>
+  <p><pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="uk"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Фіксована таблична верстка&lt;/title&gt;
+  &lt;style&gt;
+    table {
+      width: 800px;           /* Фіксована ширина */
+      height: 600px;          /* Фіксована висота */
+      border-collapse: collapse;
+      margin: 0 auto;         /* Центрування сторінки */
+    }
+
+    td {
+      border: 2px solid black;
+    }
+
+    .header {
+      background-color: #0073e6;
+      height: 100px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }
+
+    .sidebar {
+      background-color: gold;
+      width: 150px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .content {
+      background-color: white;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .footer {
+      background-color: #0073e6;
+      height: 80px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;table&gt;
+    &lt;tr&gt;
+      &lt;td colspan="2" class="header"&gt;1 — Шапка&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class="sidebar"&gt;2 — Меню&lt;/td&gt;
+      &lt;td class="content"&gt;4 — Основний контент&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td colspan="2" class="footer"&gt;3 — Підвал&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</p>
+</section>
+
+<section id="Гумова таблична верстка" data-indent="2">
+  <h2><b>Гумова таблична верстка</b></h2>
+  <p><pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="uk"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Гумова таблична верстка&lt;/title&gt;
+  &lt;style&gt;
+    table {
+      width: 100%;             /* Тягнеться по ширині */
+      height: 100vh;           /* Вся висота екрана */
+      border-collapse: collapse;
+    }
+
+    td {
+      border: 2px solid black;
+    }
+
+    .header {
+      background-color: #0073e6;
+      height: 15%;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .sidebar {
+      background-color: gold;
+      width: 20%;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .content {
+      background-color: white;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .footer {
+      background-color: #0073e6;
+      height: 10%;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;table&gt;
+    &lt;tr&gt;
+      &lt;td colspan="2" class="header"&gt;1 — Шапка (header)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td class="sidebar"&gt;2 — Меню (sidebar)&lt;/td&gt;
+      &lt;td class="content"&gt;4 — Контент (content)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td colspan="2" class="footer"&gt;3 — Підвал (footer)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/table&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</p>
+</section>
+
+<section id="Фіксована блокова верстка" data-indent="2">
+  <h2><b>Фіксована блокова верстка</b></h2>
+  <p><pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="uk"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Фіксована блокова верстка&lt;/title&gt;
+  &lt;style&gt;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      width: 800px;              /* Фіксована ширина */
+      margin: 0 auto;            /* Центрування сторінки */
+      background-color: white;
+      border: 2px solid #000;
+    }
+
+    header {
+      background-color: #0073e6;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-weight: bold;
+    }
+
+    .main {
+      display: flex;
+      height: 400px;
+    }
+
+    aside {
+      background-color: gold;
+      width: 200px;
+      padding: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .content {
+      flex: 1;
+      padding: 20px;
+      text-align: center;
+      border-left: 2px solid #000;
+    }
+
+    footer {
+      background-color: #0073e6;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-weight: bold;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;div class="container"&gt;
+    &lt;header&gt;1 — Шапка (header)&lt;/header&gt;
+
+    &lt;div class="main"&gt;
+      &lt;aside&gt;2 — Меню (sidebar)&lt;/aside&gt;
+      &lt;div class="content"&gt;4 — Контент (content)&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;footer&gt;3 — Підвал (footer)&lt;/footer&gt;
+  &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</p>
+</section>
+
+<section id="Гумова блокова верстка" data-indent="2">
+  <h2><b>Гумова блокова верстка</b></h2>
+  <p><pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="uk"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Гумова блокова верстка&lt;/title&gt;
+  &lt;style&gt;
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      width: 90%;                 /* Відносна ширина */
+      margin: 0 auto;
+      background-color: white;
+      border: 2px solid #000;
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #0073e6;
+      color: white;
+      text-align: center;
+      padding: 2%;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+
+    .main {
+      display: flex;
+      flex: 1;
+    }
+
+    aside {
+      background-color: gold;
+      width: 20%;                /* Тягнеться пропорційно */
+      text-align: center;
+      padding: 2%;
+      font-weight: bold;
+    }
+
+    .content {
+      flex: 1;
+      background-color: white;
+      padding: 2%;
+      text-align: center;
+      border-left: 2px solid #000;
+    }
+
+    footer {
+      background-color: #0073e6;
+      color: white;
+      text-align: center;
+      padding: 1.5%;
+      font-weight: bold;
+      flex-shrink: 0;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  &lt;div class="container"&gt;
+    &lt;header&gt;1 — Шапка (header)&lt;/header&gt;
+
+    &lt;div class="main"&gt;
+      &lt;aside&gt;2 — Меню (sidebar)&lt;/aside&gt;
+      &lt;div class="content"&gt;4 — Контент (content)&lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;footer&gt;3 — Підвал (footer)&lt;/footer&gt;
+  &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</p>
+</section>
+
+<section id="ЗАВДАННЯ №3 FLEXBOX">
+  <h2><b>Завдання №3</b> FLEXBOX</h2>
+  <img src="images/1/jpg" alt="1">
+</section>

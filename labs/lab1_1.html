@@ -1,0 +1,107 @@
+<section id="topic">
+  <h2>Тема, мета та місце розташування</h2>
+  <p><b>Тема:</b> Структура HTML-документа</p>
+  <p><b>Мета:</b> Ознайомитись із базовою структурою HTML-документа, навчитися створювати елементи сторінки, таблиці, форми та вставляти зображення.</p>
+  <p><b>Місце розташування:</b> <a href="https://github.com/vladyslavtarasenko-cmd/-ipz23_301-appINDEPENDENT--Tarasenko-Vladyslav--MEU-2025" target="_blank">GitHub</a></p>
+</section>
+
+<section id="desc">
+  <h2>Опис предметного середовища</h2>
+  <p>Розробка вебзастосунку для онлайн-платформи CyberZone, що представляє комп’ютерний клуб нового покоління з можливістю перегляду послуг, галереї, контактної інформації та бронювання місць онлайн. Мета проєкту — створити зручний вебсайт, який дозволяє користувачам дізнатися про клуб, його обладнання, доступні турніри та VR-зону, переглядати фото інтер’єру та ігрових станцій, а також бронювати місця для гри або участі в турнірах. Ціль — підвищити залученість геймерів, спростити процес бронювання і створити інтерактивний портал для спільноти CyberZone.
+
+Сценарій використання сайту: Користувач заходить на сайт і бачить головну сторінку з великим блоком-привітання, який підкреслює сучасність клубу та його можливості. Далі він може:
+
+Перейти в розділ «Про нас», щоб дізнатися про історію клубу, оснащення та атмосферу.
+
+Ознайомитися з розділом «Послуги», де представлені: ігрові місця, турніри та VR-зона.
+
+Переглянути галерею, яка демонструє фото клубу, ігрових станцій та VR-обладнання.
+
+Використати форму бронювання, щоб обрати дату та час для відвідування клубу.
+
+Зареєстрований користувач (або адміністратор сайту) може:
+
+Переглядати всі заброньовані місця (у майбутньому можна додати інтеграцію з базою даних).
+
+Керувати інформацією про клуб та додавати нові події або турніри.
+
+Сайт забезпечує зручну навігацію, сучасний дизайн у кіберпанк-стилі, інтерактивні елементи (попапи та lightbox для галереї) та адаптивність для різних пристроїв, що робить його зручним як для новачків, так і для постійних відвідувачів CyberZone..</p>
+</section>
+
+<section id="Структура документа">
+  <h2>Структура документа</h2>
+  <pre class="codes">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;CyberZone — Комп'ютерний клуб&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;header&gt;Заголовок сайту&lt;/header&gt;
+    &lt;nav&gt;Меню&lt;/nav&gt;
+    &lt;main&gt;Основний контент&lt;/main&gt;
+    &lt;footer&gt;Підвал сторінки&lt;/footer&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+  </pre>
+</section>
+
+<section id="HTML-код таблиць" data-indent="2">
+  <h2>HTML-код таблиць</h2>
+  <table border="1">
+    <tr><th>Бронювання місця</th><th>Інформація</th></tr>
+    <tr><td>Ваше ім’я</td><td>Поле для імені</td></tr>
+    <tr><td>Дата</td><td>Поле для дати</td></tr>
+    <tr><td>Час</td><td>Поле для часу</td></tr>
+  </table>
+  <pre class="codes">
+    &lt;table border="1"&gt;
+    &lt;tr&gt;&lt;th&gt;Бронювання місця&lt;/th&gt;&lt;th&gt;Інформація&lt;/th&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Ваше ім’я&lt;/td&gt;&lt;td&gt;Поле для імені&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Дата&lt;/td&gt;&lt;td&gt;Поле для дати&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;Час&lt;/td&gt;&lt;td&gt;Поле для часу&lt;/td&gt;&lt;/tr&gt;
+    &lt;/table&gt;
+  </pre>
+</section>
+
+<section id="HTML-код форми" data-indent="2">
+  <h2>HTML-код форми</h2>
+  <form>
+    <label for="name">Ім’я:</label><br />
+<input id="name" type="text" placeholder="Введіть ваше ім’я"><br />
+
+<label for="email">Email:</label><br />
+<input id="email" type="email" placeholder="example@gmail.com"><br />
+
+<label for="message">Повідомлення:</label><br />
+<textarea id="message" placeholder="Ваш текст..."></textarea><br />
+    <button>Надіслати</button>
+  </form>
+
+  <pre class="codes">
+&lt;form&gt;
+  &lt;label for="name"&gt;Ім’я:&lt;/label&gt;&lt;br /&gt;
+  &lt;input id="name" type="text" placeholder="Введіть ваше ім’я"&gt;&lt;br /&gt;
+
+  &lt;label for="email"&gt;Email:&lt;/label&gt;&lt;br /&gt;
+  &lt;input id="email" type="email" placeholder="example@gmail.com"&gt;&lt;br /&gt;
+
+  &lt;label for="message"&gt;Повідомлення:&lt;/label&gt;&lt;br /&gt;
+  &lt;textarea id="message" placeholder="Ваш текст..."&gt;&lt;/textarea&gt;&lt;br /&gt;
+
+  &lt;button&gt;Надіслати&lt;/button&gt;
+&lt;/form&gt;
+</pre>
+</section>
+
+<section id="HTML-код зображення" data-indent="2">
+  <h2>HTML-код зображення</h2>
+  <p>Приклад додавання зображення кіберспортсмена:</p>
+  <img src="images/1738.jpg" alt="Фото кіберспортсмена" width="100%">
+  <pre class="codes">&lt;img src="images/1738.jpg" alt="Фото кіберспортсмена" width="100%"&gt;</pre>
+</section>
+
+<section id="concl">
+  <h2>Висновки</h2>
+  <p>У ході виконання лабораторної роботи я ознайомився зі структурою HTML-документа, розглянув основні теги, створив таблицю, форму зворотного зв’язку та вставив зображення. Отримані знання є базовими для подальшого вивчення CSS і JavaScript.</p>
+</section>
